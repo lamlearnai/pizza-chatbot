@@ -4,7 +4,7 @@ import streamlit as st
 from dotenv import load_dotenv
 
 # —————————————————————————————————————————————————————
-# 1. Load your AI21 key and define the system prompt
+# 1. Load AI21 key and define the system prompt
 # —————————————————————————————————————————————————————
 load_dotenv()
 API_KEY = os.getenv("AI21_API_KEY")
@@ -15,7 +15,7 @@ if not API_KEY:
 SYSTEM_MESSAGE = {
     "role": "system",
     "content": """
-You are OrderBot, a friendly pizza-ordering assistant who can speak Malay, English, or any mix of both (Manglish!). 
+You are PizzaBot, a friendly pizza-ordering assistant who can speak Malay, English, or any mix of both (Manglish!). 
 When the user types in Malay, reply in Malay; when they type in English, reply in English; when they mix, match their style.
 
 Menu:
